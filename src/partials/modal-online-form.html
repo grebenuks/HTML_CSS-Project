@@ -1,0 +1,33 @@
+<div class="backdrop-online-form is-hidden" data-modal>
+	<div class="modal-online-form">
+		<button class="form-close-button" data-modal-close>
+			<svg width="40" height="40">
+				<use class="form-close-icon" href="./images/project-icons.svg#icon-menu-close"></use>
+			</svg>
+		</button>
+		<p class="modal-form-title">Онлайн-запись</p>
+		<form>
+			<label class="modal-input">
+				<input
+					class="test"
+					type="text"
+					placeholder=" "
+					minlength="2"
+					maxlength="25"
+					pattern="^[a-zA-Z-А-Яа-яЁё\s]+$"
+					required
+				/>
+				<span class="input-name">Имя*</span>
+			</label>
+			<label class="modal-input">
+				<input class="test" type="tel" placeholder=" " pattern="[0-9]{10}" required />
+				<span class="input-name">Телефон*</span>
+			</label>
+			<div class="modal-input textarea">
+				<textarea class="message" name="message" cols="30" placeholder=" "></textarea>
+				<span class="input-name">сообщение</span>
+			</div>
+			<button class="btn button-modal-form" type="submit">отправить</button>
+		</form>
+	</div>
+</div>

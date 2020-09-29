@@ -1,0 +1,151 @@
+.main-nav {
+	display: flex;
+	max-width: 1600px;
+	position: relative;
+}
+
+.side-bar {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	@media screen and (min-width: 768px) {
+		width: 159px;
+		height: 680px;
+		background: $prime-white-color;
+		position: relative;
+	}
+}
+
+.header {
+	width: 100%;
+
+	@media screen and (max-width: 767px) {
+		padding: 48px 31px;
+		min-height: 580px;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		padding: 40px 39px 40px 24px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 40px 55px 40px 40px;
+	}
+
+	background-image: url(/images/hero-section/mobile3-hero1x-min.jpg), url(/images/hero-section/mobile2-hero1x-min.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 192dpi),
+		screen and (min-resolution: 2dppx) {
+		background-image: url(/images/hero-section/mobile3-hero2x-min.jpg), url(/images/hero-section/mobile2-hero2x-min.jpg),
+			url(/images/hero-section/mobile1-hero2x-min.jpg);
+	}
+
+	@media screen and (min-width: 768px) {
+		background-image: url(/images/hero-section/tablet3-hero1x-min.jpg), url(/images/hero-section/tablet2-hero1x-min.jpg),
+			url(/images/hero-section/tablet1-hero1x-min.jpg);
+
+		@media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 192dpi),
+			screen and (min-resolution: 2dppx) {
+			background-image: url(/images/hero-section/tablet3-hero2x-min.jpg),
+				url(/images/hero-section/tablet2-hero2x-min.jpg), url(/images/hero-section/tablet1-hero2x-min.jpg);
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		background-image: url(/images/hero-section/desktop3-hero1x-min.jpg),
+			url(/images/hero-section/desktop2-hero1x-min.jpg), url(/images/hero-section/desktop1-hero1x-min.jpg);
+
+		@media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 192dpi),
+			screen and (min-resolution: 2dppx) {
+			background-image: url(/images/hero-section/desktop3-hero2x-min.jpg),
+				url(/images/hero-section/desktop2-hero2x-min.jpg), url(/images/hero-section/desktop1-hero2x-min.jpg);
+		}
+	}
+}
+
+.header-top {
+	display: flex;
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 120px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-bottom: 156px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 204px;
+	}
+}
+.logo {
+	fill: $prime-white-color;
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		left: 32px;
+		top: 40px;
+		fill: $prime-black-color;
+	}
+	@media screen and (min-width: 1200px) {
+		top: 32px;
+		& svg {
+			display: block;
+		}
+	}
+	& > svg {
+		display: block;
+	}
+}
+
+.header-midle {
+	@media screen and (max-width: 767px) {
+		max-width: 306px;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		max-width: 355px;
+		margin: 0 auto;
+	}
+	@media screen and (min-width: 1200px) {
+		max-width: 500px;
+		margin-left: 60px;
+	}
+}
+
+.header-name,
+.header-title-main {
+	margin-bottom: 20px;
+}
+
+.header-name {
+	color: $header-color;
+}
+
+.section-description.is-header {
+	color: $header-color;
+	&:before {
+		@extend %before;
+
+		background-color: $header-color;
+	}
+}
+.header-title {
+	font-family: Raleway, sans-serif;
+	color: $prime-white-color;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+	@media screen and (max-width: 479px) {
+		font-size: 42px;
+	}
+	@media screen and (min-width: 1200px) {
+		font-size: 72px;
+		line-height: 1.18;
+	}
+}
+.header-text {
+	color: $light-grey-color;
+}

@@ -1,0 +1,34 @@
+.team {
+	background-color: $background-color;
+
+}
+
+.team-title {
+	margin-bottom: 44px;
+
+}
+
+.team-cards {
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+}
+
+.flex-card {
+	max-width: 450px;
+	@media screen and (max-width: 1199px) {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		&:not(:last-child) {
+			margin-bottom: 64px;
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 30px) / 3);
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+}
